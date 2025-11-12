@@ -221,9 +221,9 @@ jobs:
           pip install wheels-linux-x86_64/autopy-*-cp312-*
       - uses: actions/checkout@v4
         with:
-          repository: intra2net/guibot
+          repository: pevogam/guibot
           path: ./guibot
-          ref: ${{ github.event.inputs.rust_ref || 'master' }}
+          ref: ${{ github.event.inputs.rust_ref || 'windows-coverage' }}
       - name: Local pip installation of caller code
         run: |
           cd guibot/packaging
@@ -268,9 +268,9 @@ jobs:
           pip install $wheel.FullName
       - uses: actions/checkout@v4
         with:
-          repository: intra2net/guibot
+          repository: pevogam/guibot
           path: ./guibot
-          ref: ${{ github.event.inputs.rust_ref || 'master' }}
+          ref: ${{ github.event.inputs.rust_ref || 'windows-coverage' }}
       - name: Local pip installation of caller code
         run: |
           cd guibot/packaging
@@ -308,9 +308,9 @@ jobs:
           pip install wheels-macos-aarch64/autopy-*-cp312-*
       - uses: actions/checkout@v4
         with:
-          repository: intra2net/guibot
+          repository: pevogam/guibot
           path: ./guibot
-          ref: ${{ github.event.inputs.rust_ref || 'master' }}
+          ref: ${{ github.event.inputs.rust_ref || 'windows-coverage' }}
       - name: Local pip installation of caller code
         run: |
           cd guibot/packaging
