@@ -43,9 +43,9 @@ jobs:
           ' Cargo.toml > Cargo.toml.tmp && mv Cargo.toml.tmp Cargo.toml
       - uses: actions/checkout@v4
         with:
-          repository: autopilot-rs/autopilot-rs
+          repository: pevogam/autopilot-rs
           path: ./autopilot-rs
-          ref: ${{ github.event.inputs.rust_ref || 'main' }}
+          ref: ${{ github.event.inputs.rust_ref || 'patch' }}
       - name: Set up cargo cache
         uses: actions/cache@v4
         with:
@@ -99,9 +99,9 @@ jobs:
           Set-Content -Path Cargo.toml -Value $updated
       - uses: actions/checkout@v4
         with:
-          repository: autopilot-rs/autopilot-rs
+          repository: pevogam/autopilot-rs
           path: ./autopilot-rs
-          ref: ${{ github.event.inputs.rust_ref || 'main' }}
+          ref: ${{ github.event.inputs.rust_ref || 'patch' }}
       - name: Set up cargo cache
         uses: actions/cache@v4
         with:
@@ -153,9 +153,9 @@ jobs:
           ' Cargo.toml > Cargo.toml.tmp && mv Cargo.toml.tmp Cargo.toml
       - uses: actions/checkout@v4
         with:
-          repository: autopilot-rs/autopilot-rs
+          repository: pevogam/autopilot-rs
           path: ./autopilot-rs
-          ref: ${{ github.event.inputs.rust_ref || 'main' }}
+          ref: ${{ github.event.inputs.rust_ref || 'patch' }}
       - name: Set up cargo cache
         uses: actions/cache@v4
         with:
