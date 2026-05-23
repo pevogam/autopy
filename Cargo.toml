@@ -13,7 +13,7 @@ name = "autopy"
 version = "0.4.0"
 
 [dependencies.pyo3]
-version = "0.27.1"
+version = "0.28.3"
 
 [dependencies.image]
 version = "0.25.6"
